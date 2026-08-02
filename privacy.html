@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | PUREPACK Naturals</title>
+  <meta name="description" content="PUREPACK Naturals privacy policy." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#173b2c" />
+  <link rel="canonical" href="https://purepacknaturals.co.ke/privacy.html" />
+  <link rel="icon" type="image/png" href="assets/images/logo1.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PUREPACK Naturals" />
+  <meta property="og:title" content="Privacy Policy | PUREPACK Naturals" />
+  <meta property="og:description" content="PUREPACK Naturals privacy policy." />
+  <meta property="og:url" content="https://purepacknaturals.co.ke/privacy.html" />
+  <meta property="og:image" content="https://purepacknaturals.co.ke/assets/images/hero-export-facility.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy Policy | PUREPACK Naturals" />
+  <meta name="twitter:description" content="PUREPACK Naturals privacy policy." />
+  <meta name="twitter:image" content="https://purepacknaturals.co.ke/assets/images/hero-export-facility.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=static-pages-v1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHF5G4VWT1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HHF5G4VWT1');
+  </script>
+</head>
+<body class="legal-view">
+<div class="app-view active" id="view-privacy">
+    <section class="privacy-hero"><div class="container"><span>Legal information</span><h1>Privacy Policy</h1><p>How PUREPACK Naturals handles information shared through this website.</p><div class="legal-actions"><a href="#" onclick="window.history.back(); return false;"><i class="bi bi-arrow-left"></i> Back</a><a href="index.html"><i class="bi bi-house-fill"></i> Home</a></div></div></section>
+    <main class="container py-5 privacy-page">
+      <div class="privacy-page-intro"><p><strong>Last updated:</strong> 2 August 2026</p><p>PUREPACK Naturals Limited respects your privacy. This policy explains what information we collect through this website, why we use it and the choices available to you.</p></div>
+      <div class="row g-4">
+        <div class="col-lg-6"><section><h2>Information you share with us</h2><p>When you use our contact form or contact us directly, you may provide your name, company, email address, phone number, product requirements, destination market and other details relevant to your enquiry.</p></section></div>
+        <div class="col-lg-6"><section><h2>How we use your information</h2><p>We use enquiry information to respond to requests, discuss sourcing and export services, prepare relevant commercial information and improve communication with prospective buyers and partners.</p></section></div>
+        <div class="col-lg-6"><section><h2>When information may be shared</h2><p>Information is shared only when reasonably necessary to progress an agreed enquiry or order—for example with relevant suppliers, logistics providers, inspection bodies or professional advisers. We do not sell personal information.</p></section></div>
+        <div class="col-lg-6"><section><h2>Data security and retention</h2><p>We take reasonable steps to protect information against unauthorised access, loss or misuse. Information is retained only for as long as needed for communication, commercial records or applicable legal requirements.</p></section></div>
+        <div class="col-lg-6"><section><h2>Cookies and external services</h2><p>This website may use basic browser technologies and third-party services such as map embeds. Those services may process information according to their own privacy policies.</p></section></div>
+        <div class="col-lg-6"><section><h2>Your choices</h2><p>You may ask us to update, correct or delete personal information we hold about you, subject to any legal or contractual record-keeping obligations.</p></section></div>
+      </div>
+      <div class="privacy-contact"><div><strong>Privacy questions</strong><span>Contact us if you have a question about this policy or your information.</span></div><a href="mailto:sales@purepacknaturals.com">sales@purepacknaturals.com <i class="bi bi-arrow-right ms-1"></i></a></div>
+    </main>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.product-item-main').forEach(function (card) {
+    var image = card.querySelector('.product-image-wrapper img');
+    var description = card.querySelector('.product-desc');
+    var body = card.querySelector('.product-body');
+    var name = card.querySelector('h3');
+    if (image && description) image.alt = description.textContent.trim();
+    if (name && !card.querySelector('.product-image-name')) {
+      var label = document.createElement('div');
+      label.className = 'product-image-name';
+      label.textContent = name.textContent.trim();
+      card.appendChild(label);
+    }
+    if (body) body.remove();
+  });
+  var marwoMain = document.getElementById('section-marwo-main');
+  var marwoSpices = document.getElementById('section-marwo-spices');
+  if (marwoMain && marwoSpices) marwoSpices.insertAdjacentElement('afterend', marwoMain);
+  var mobileMenu = document.getElementById('navbarContent');
+  if (mobileMenu && window.bootstrap) {
+    var openedAt = 0, scrollStart = 0;
+    var closeMenu = function () { if (mobileMenu.classList.contains('show')) window.bootstrap.Collapse.getOrCreateInstance(mobileMenu).hide(); };
+    mobileMenu.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', closeMenu); });
+    mobileMenu.addEventListener('shown.bs.collapse', function () { openedAt = Date.now(); scrollStart = window.scrollY; });
+    window.addEventListener('scroll', function () { if (Date.now() - openedAt >= 450 && Math.abs(window.scrollY - scrollStart) >= 10) closeMenu(); }, { passive: true });
+  }
+});
+</script>
+</body>
+</html>
