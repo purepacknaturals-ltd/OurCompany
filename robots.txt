@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://purepacknaturals.co.ke/sitemap.xml
+Sitemap: https://purepacknaturals.com/sitemap.xml
